@@ -11,6 +11,7 @@ namespace Model_Binding.Models
         public decimal Basic { get; set; }
         public int DeptNo { get; set; }
 
+
         public static List<Employee> GetAllEmployee()
         {
             List<Employee> list = new List<Employee>();
@@ -131,6 +132,7 @@ namespace Model_Binding.Models
             catch (Exception ex) { Console.WriteLine(ex.Message); }
             finally { cn.Close(); }
         }
+        
     }
 }
 /*
